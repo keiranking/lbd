@@ -13,8 +13,8 @@
 }
 
 .section--bordered {
-  border-top: $base-border;
   border-bottom: $base-border;
+  border-top: $base-border;
 }
 
 .section--padded {
@@ -26,17 +26,15 @@
 }
 
 .section--light-bkgd {
-  background-color: $light-background-color;
+  background-color: lighten($viewport-background-color, 5%);
 }
 
 .section--dark-bkgd {
-  background-color: $dark-background-color;
-  color: $light-font-color;
+  background-color: darken($viewport-background-color, 5%);
 }
 
 .section--tinted-bkgd {
-  background-color: $dark-background-color;
-  box-shadow: 0 3000px rgba($dark-background-color, 0.85) inset;
+  box-shadow: 0 3000px rgba($viewport-background-color, 0.85) inset;
   color: $white;
 }
 
