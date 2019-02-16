@@ -1,0 +1,19 @@
+swan:
+  clubs:
+    2: "Cool down."
+    3: "Sit up, chest out. Excellent."
+    4: "Kick off your shoes."
+    5: "Show me a push-up."
+  diamonds:
+    2: "Hug it out."
+    3: "Get all cute and cuddly."
+    4: "Let your hair out."
+    5: "Bottoms up!"
+wildcat:
+  clubs:
+    2: "You need two good licks."
+    3: "Three's company."
+    4: "Train to be a lifeguard."
+  diamonds:
+    2: "Get your panties in a bunch."
+    3: "Get fitted for a hand bra."
