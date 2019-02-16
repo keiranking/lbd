@@ -2,6 +2,7 @@ html {
   color: $base-font-color;
   font-family: $base-font-family;
   font-size: 100%;
+  font-weight: 300;
   line-height: $base-line-height;
 
   @media(min-width: $desktop-breakpoint) {
@@ -17,23 +18,22 @@ h5,
 h6 {
   font-family: $heading-font-family;
   font-size: modular-scale(1);
+  font-weight: normal;
   line-height: $heading-line-height;
   margin: 0 0 $small-spacing;
 }
 
 h1 {
   font-size: $xlarge-font-size;
-  font-weight: normal;
   line-height: $xlarge-font-size;
 }
 
 h2 {
-  font-size: $medium-font-size;
-  font-weight: bold;
-  line-height: $medium-font-size;
+  font-size: $large-font-size;
+  line-height: $large-font-size;
 }
 
-h3 {
+h4 {
   font-size: $base-font-size;
   font-weight: bold;
   letter-spacing: 0.2rem;

@@ -31,7 +31,7 @@ $xxlarge-font-size: 4rem;
 
 // Colors
 $black: #000;
-$dark-gray: #333;
+$dark-gray: #222;
 $medium-gray: #999;
 $light-gray: #ddd;
 $whitesmoke: #f5f5f5;
@@ -48,7 +48,7 @@ $base-font-color: $light-gray;
 $action-color: $red;
 
 // Border
-$base-border-color: darken($viewport-background-color, 5%);
+$base-border-color: lighten($viewport-background-color, 5%);
 $base-border: 1px solid $base-border-color;
 $testing-border: 2px dashed #9acd32;
 
