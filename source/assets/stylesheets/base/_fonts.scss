@@ -1,0 +1,31 @@
+@font-face {
+   font-family: "Cooper";
+   src: url("../../assets/fonts/cooper-light.woff") format("woff"),
+        url("../../assets/fonts/cooper-light.ttf") format("truetype");
+   font-weight: normal;
+   font-style: normal;
+ }
+
+ @font-face {
+    font-family: "Cooper";
+    src: url("../../assets/fonts/cooper-lightitalic.woff") format("woff"),
+         url("../../assets/fonts/cooper-lightitalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+  }
+
+  @font-face {
+     font-family: "Cooper";
+     src: url("../../assets/fonts/cooper-medium.woff") format("woff"),
+          url("../../assets/fonts/cooper-medium.ttf") format("truetype");
+     font-weight: bold;
+     font-style: normal;
+   }
+
+   @font-face {
+      font-family: "Cooper";
+      src: url("../../assets/fonts/cooper-mediumitalic.woff") format("woff"),
+           url("../../assets/fonts/cooper-mediumitalic.ttf") format("truetype");
+      font-weight: bold;
+      font-style: italic;
+    }
