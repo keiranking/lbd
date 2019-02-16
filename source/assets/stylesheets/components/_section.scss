@@ -1,11 +1,11 @@
 .section {
+  align-items: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   margin: 0;
   padding: 0 $base-spacing;
-  position: relative;
 
   @media(min-width: $mobile-breakpoint) {
     padding: 0 $xlarge-spacing;
@@ -42,12 +42,12 @@
   width: 100%;
 
   @media(min-width: $mobile-breakpoint) {
-    max-width: $medium-breakpoint;
+    max-width: $content-width;
   }
 }
 
 .section__content--slim {
   @media(min-width: $mobile-breakpoint) {
-    max-width: $base-breakpoint;
+    max-width: $article-width;
   }
 }

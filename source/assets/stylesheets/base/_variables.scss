@@ -8,29 +8,44 @@ $heading-line-height: 1.2;
 
 // Other Sizes
 $base-border-radius: 3px;
-$base-spacing: 1.5em;
+
+$base-spacing: 1.5rem;
 $large-spacing: $base-spacing * 2;
 $xlarge-spacing: $large-spacing * 2;
 $xxlarge-spacing: $xlarge-spacing * 2;
 $small-spacing: $base-spacing / 2;
 $xsmall-spacing: $small-spacing / 2;
+
+$article-width: 32rem;
+$content-width: 48rem;
+
 $base-z-index: 0;
+
+// Font Sizes
+$small-font-size: 0.85rem;
+$base-font-size: 1rem;
+$medium-font-size: 1.5rem;
+$large-font-size: 2rem;
+$xlarge-font-size: 3rem;
+$xxlarge-font-size: 4rem;
 
 // Colors
 $black: #000;
-$blue: #1565c0;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
 $whitesmoke: #f5f5f5;
 $white: #fff;
 
+$blue: #1565c0;
+$red: #dd0000;
+
 // Background Colors
 $viewport-background-color: $dark-gray;
 
 // Font Colors
 $base-font-color: $light-gray;
-$action-color: $blue;
+$action-color: $red;
 
 // Border
 $base-border-color: darken($viewport-background-color, 5%);
@@ -52,4 +67,3 @@ $mobile-breakpoint: 550px;
 $base-breakpoint: 620px;
 $desktop-breakpoint: 720px;
 $medium-breakpoint: 960px;
-$large-breakpoint: 1220px;
