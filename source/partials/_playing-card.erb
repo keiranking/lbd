@@ -1,0 +1,11 @@
+<div class="playing-card playing-card--<%= suit %>">
+  <%= inline_svg "ranks/#{rank}.svg",
+    title: "#{rank}",
+    class: "mini-hand__rank"
+  %>
+
+  <%= inline_svg "suits/#{suit}.svg",
+    title: "#{suit}",
+    class: "mini-hand__suit"
+  %>
+</div>

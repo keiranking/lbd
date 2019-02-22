@@ -19,5 +19,13 @@
     </p>
 
     <hr />
+
+    <div class="hand-of-cards">
+      <%= partial "partials/playing-card", locals: { rank: '3', suit: 'hearts' } %>
+
+      <%= partial "partials/playing-card", locals: { rank: '5', suit: 'diamonds' } %>
+
+      <%= partial "partials/playing-card", locals: { rank: 'jack', suit: 'clubs' } %>
+    </div>
   </div>
 </section>
