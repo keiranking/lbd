@@ -1,10 +1,19 @@
 $_pip-size: 1.25rem;
-$_playing-card-height: $_pip-size * 2.375;
+$_playing-card-height: $_pip-size * 2.5;
 $_playing-card-width: $_pip-size * 5.5;
 
 .playing-card {
+  display: inline-block;
+
+  & + & {
+    margin-left: ($_pip-size * 1.2) - $_playing-card-width;
+  }
+}
+
+.playing-card__face {
   align-items: flex-start;
-  background-color: $white;
+  background-color: $playing-card-color;
+  border: 2px solid $viewport-background-color;
   border-radius: $large-border-radius $large-border-radius 0 0;
   display: flex;
   flex-direction: column;
@@ -16,11 +25,6 @@ $_playing-card-width: $_pip-size * 5.5;
   svg {
     height: $_pip-size;
     width: $_pip-size;
-  }
-
-  & + & {
-    border-left: 2px solid $viewport-background-color;
-    margin-left: ($_pip-size * 1.2) - $_playing-card-width;
   }
 }
 
@@ -36,10 +40,4 @@ $_playing-card-width: $_pip-size * 5.5;
   svg {
     fill: $red;
   }
-}
-
-// ------
-
-.hand-of-cards {
-  display: flex;
 }

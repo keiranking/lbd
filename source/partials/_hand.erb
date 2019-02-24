@@ -1,0 +1,15 @@
+<figure class="hand">
+  <div>
+    <% cards.each do |card| %>
+      <% rank, suit = card.split(' of ') %>
+
+      <%= partial "partials/playing-card", locals: { rank: rank, suit: suit } %>
+    <% end %>
+  </div>
+
+  <% if caption %>
+    <figcaption class="hand__caption">
+        <%= caption %>
+    </figcaption>
+  <% end %>
+</figure>
