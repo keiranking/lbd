@@ -52,6 +52,7 @@ $playing-card-color: $white;
 // Border
 $base-border-color: lighten($viewport-background-color, 5%);
 $base-border: 1px solid $base-border-color;
+$bright-border: 1px solid $base-font-color;
 $testing-border: 2px dashed #9acd32;
 
 // Focus
@@ -66,6 +67,5 @@ $base-timing: ease;
 
 // Breakpoints
 $mobile-breakpoint: 550px;
-$base-breakpoint: 620px;
 $desktop-breakpoint: 720px;
-$medium-breakpoint: 960px;
+$large-screen-breakpoint: 960px;
