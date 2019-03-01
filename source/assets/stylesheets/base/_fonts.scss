@@ -53,3 +53,11 @@
   font-weight: bold;
   font-style: italic;
 }
+
+@font-face {
+  font-family: "Fineday";
+  src: url("../../assets/fonts/fineday.woff") format("woff"),
+    url("../../assets/fonts/fineday.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
