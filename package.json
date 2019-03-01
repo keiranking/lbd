@@ -1,0 +1,10 @@
+{
+  "name": "lbd",
+  "scripts": {
+    "stylelint": "npx stylelint 'source/assets/stylesheets/**/*.scss'"
+  },
+  "devDependencies": {
+    "@thoughtbot/stylelint-config": "^0.2.0",
+    "stylelint": "^9.10.1"
+  }
+}

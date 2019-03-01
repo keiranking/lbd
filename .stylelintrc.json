@@ -1,0 +1,6 @@
+{
+  "extends": "@thoughtbot/stylelint-config",
+  "rules": {
+    "color-hex-length": "long"
+  }
+}
