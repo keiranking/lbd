@@ -12,6 +12,15 @@ Each game has 9 rounds. Each round requires players to collect a unique combinat
 
 A set is a collection of 3 or more cards of the same rank, disregarding suit.
 
+<%= partial "partials/hand", locals: {
+  caption: "A set: 3 or more cards of the same rank, disregarding suit",
+  cards: [
+    "4 of diamonds",
+    "4 of hearts",
+    "4 of clubs"
+  ]
+} %>
+
 A run is a collection of 4 or more cards of consecutive ranks in the same suit.
 
 | Requirement             | Name          |
