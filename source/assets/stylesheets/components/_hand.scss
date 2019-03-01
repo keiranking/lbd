@@ -1,9 +1,18 @@
 .hand {
-  align-items: center;
-  display: inline-flex;
-  flex-direction: column;
+  display: inline-grid;
+  grid-template-columns: min-content;
+  margin-bottom: $base-spacing;
+  margin-right: $large-spacing;
+  margin-top: $small-spacing;
+}
+
+.hand__cards {
+  display: flex;
 }
 
 .hand__caption {
+  font-family: "Canela Text", $base-font-family;
   font-size: $small-font-size;
+  font-style: italic;
+  margin-top: $xsmall-spacing;
 }

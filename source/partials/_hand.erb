@@ -1,5 +1,5 @@
 <figure class="hand">
-  <div>
+  <div class="hand__cards">
     <% cards.each do |card| %>
       <% rank, suit = card.split(' of ') %>
 
@@ -9,7 +9,7 @@
 
   <% if caption %>
     <figcaption class="hand__caption">
-        <%= caption %>
+      <%= caption %>
     </figcaption>
   <% end %>
 </figure>

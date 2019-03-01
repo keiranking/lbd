@@ -55,6 +55,20 @@
 }
 
 @font-face {
+  font-family: "Canela Text";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../assets/fonts/canela-text-light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Canela Text";
+  font-style: italic;
+  font-weight: normal;
+  src: url("../../assets/fonts/canela-text-lightitalic.woff2") format("woff2");
+}
+
+@font-face {
   font-family: "Fineday";
   font-style: normal;
   font-weight: normal;

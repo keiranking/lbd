@@ -10,10 +10,8 @@ The objective of the game is to have the lowest score.
 
 Each game has 9 rounds. Each round requires players to collect a unique combination of sets and runs.
 
-A set is a collection of 3 or more cards of the same rank, disregarding suit.
-
 <%= partial "partials/hand", locals: {
-  caption: "A set: 3 or more cards of the same rank, disregarding suit",
+  caption: "A set is 3 or more cards of the same rank, disregarding suit.",
   cards: [
     "4 of diamonds",
     "4 of hearts",
@@ -21,7 +19,19 @@ A set is a collection of 3 or more cards of the same rank, disregarding suit.
   ]
 } %>
 
-A run is a collection of 4 or more cards of consecutive ranks in the same suit.
+<%= partial "partials/hand", locals: {
+  caption: "A run is 4 or more suited cards with consecutive ranks.",
+  cards: [
+    "8 of spades",
+    "9 of spades",
+    "10 of spades",
+    "J of spades"
+  ]
+} %>
+
+Each round, deal the minimum number of cards necessary to collect the requirements. For example, in 334, deal 10 cards.
+
+Place the undealt cards (the "stock") face down in the middle of the players.
 
 | Requirement             | Name          |
 | ----------------------- | ------------- |
@@ -36,10 +46,6 @@ A run is a collection of 4 or more cards of consecutive ranks in the same suit.
 | Four runs               | 4444          |
 
 Aces can be individually high or low as needed. Jokers are wild.
-
-Each round, deal the minimum number of cards necessary to collect the requirements. For example, in 334, deal 10 cards.
-
-Place the undealt cards (the "stock") face down in the middle of the players.
 
 ## Playing
 
