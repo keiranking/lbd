@@ -1,0 +1,46 @@
+---
+title: "Poker"
+---
+
+# Poker
+
+Poker is a game for 2-6 players.
+
+## The Basics
+
+The objective of the game is to acquire the most chips.
+
+<%= partial "partials/hand", locals: {
+  caption: "A flush is 5 cards of the same suit.",
+  cards: [
+    "4 of diamonds",
+    "7 of diamonds",
+    "9 of diamonds",
+    "Q of diamonds",
+    "K of diamonds",
+  ]
+} %>
+
+<%= partial "partials/hand", locals: {
+  caption: "A straight is 5 cards with consecutive ranks.",
+  cards: [
+    "7 of spades",
+    "8 of clubs",
+    "9 of hearts",
+    "10 of spades",
+    "J of diamonds",
+  ]
+} %>
+
+
+## Playing
+
+Blah blah.
+
+## Winning
+
+The object of each round is to have the highest-ranking hand.
+
+## Scoring
+
+A player's score is the total value of their chips at the end of play.
