@@ -1,5 +1,28 @@
 <section class="section section--dark-bkgd">
-  <div class="section__content">
-    partials/_header.erb
+  <div class="section__content header">
+    <div>
+      Logo
+    </div>
+
+    <nav class="nav">
+      <a class="nav__item">
+        Buy
+      </a>
+
+      <details class="nav__item">
+        <summary>
+          How to play
+
+          <%= inline_svg "ui/down-triangle.svg",
+            title: "Menu indicator",
+            class: "nav__icon"
+          %>
+        </summary>
+
+        <%= partial "partials/games-list", locals: {
+          classes: "nav__submenu"
+        } %>
+      </details>
+    </nav>
   </div>
 </section>

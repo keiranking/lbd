@@ -70,7 +70,7 @@
 </section>
 
 <section class="section section--padded section--dark-bkgd">
-  <div class="section__content section__content--centered">
+  <div id="rules" class="section__content section__content--centered">
     <h2>
       A thousand ways to play.
     </h2>
@@ -79,12 +79,8 @@
       Not sure how to use Little Black Deck?<br />We've got you (un)covered.
     </p>
 
-    <ul class="games-list">
-      <% sitemap.resources.select { |resource| resource.path.start_with?("games") }.each do |game| %>
-        <li>
-          <%= link_to game.data.title, game.path, class: "u-link--incognito" %>
-        </li>
-      <% end %>
-    </ul>
+    <%= partial "partials/games-list", locals: {
+      classes: "games-list"
+    } %>
   </div>
 </section>

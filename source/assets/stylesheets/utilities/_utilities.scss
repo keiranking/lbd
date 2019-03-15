@@ -1,6 +1,11 @@
 .u-link--incognito {
-  color: $base-font-color;
+  color: currentColor;
   text-decoration: none;
+
+  &:hover {
+    color: currentColor;
+    text-decoration: underline;
+  }
 }
 
 .u-see {

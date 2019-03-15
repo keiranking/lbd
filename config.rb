@@ -31,3 +31,9 @@ configure :production do
   activate :minify_html
   activate :minify_javascript
 end
+
+helpers do
+  def game_resources
+    sitemap.resources.select { |resource| resource.path.start_with?("games") }
+  end
+end

@@ -1,0 +1,7 @@
+<ul class="<%= classes %>">
+  <% game_resources.each do |game| %>
+    <li>
+      <%= link_to game.data.title, game.url, class: "u-link--incognito" %>
+    </li>
+  <% end %>
+</ul>

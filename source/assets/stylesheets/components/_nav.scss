@@ -1,0 +1,31 @@
+$_menu-color: $base-border-color;
+$_nav-icon-size: 0.5rem;
+$_submenu-width: 8rem;
+
+.nav {
+  display: flex;
+  position: relative;
+}
+
+.nav__icon {
+  fill: currentColor;
+  height: $_nav-icon-size;
+  width: $_nav-icon-size;
+}
+
+.nav__item {
+  padding: $small-spacing $base-spacing;
+
+  &[open] {
+    background-color: $_menu-color;
+  }
+}
+
+.nav__submenu {
+  background-color: $_menu-color;
+  min-width: $_submenu-width;
+  padding: $small-spacing;
+  position: absolute;
+  right: 0;
+  top: 100%;
+}
