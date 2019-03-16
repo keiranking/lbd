@@ -1,6 +1,6 @@
 $_menu-color: $base-border-color;
 $_nav-icon-size: 0.5rem;
-$_submenu-width: 8rem;
+$_submenu-width: 12rem;
 
 .nav {
   display: flex;
@@ -23,9 +23,9 @@ $_submenu-width: 8rem;
 
 .nav__submenu {
   background-color: $_menu-color;
-  min-width: $_submenu-width;
-  padding: $small-spacing;
+  left: 0;
+  padding: $small-spacing $base-spacing;
   position: absolute;
-  right: 0;
   top: 100%;
+  width: $xxlarge-spacing;
 }

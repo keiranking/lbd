@@ -1,6 +1,31 @@
 .header {
   align-items: center;
-  display: flex;
-  font-size: $small-font-size;
-  justify-content: space-between;
+  display: grid;
+  grid-template-areas:
+    "logo     logo"
+    "left-nav right-nav";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: $large-spacing $large-spacing;
+
+  @media(min-width: $mobile-breakpoint) {
+    font-size: $small-font-size;
+    grid-template-areas: "left-nav logo right-nav";
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: $large-spacing;
+  }
+}
+
+.header__left-nav {
+  grid-area: left-nav;
+  justify-content: flex-start;
+}
+
+.header__right-nav {
+  grid-area: right-nav;
+  justify-content: flex-end;
+}
+
+.header__logo {
+  grid-area: logo;
+  text-align: center;
 }
