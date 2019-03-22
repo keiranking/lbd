@@ -1,3 +1,6 @@
+$_header-logo-height: $base-spacing;
+$_header-logo-width: $_header-logo-height * 8;
+
 .header {
   align-items: center;
   display: grid;
@@ -5,7 +8,7 @@
     "logo     logo"
     "left-nav right-nav";
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: $large-spacing $large-spacing;
+  grid-template-rows: auto $large-spacing;
 
   @media(min-width: $mobile-breakpoint) {
     font-size: $small-font-size;
@@ -26,6 +29,15 @@
 }
 
 .header__logo {
+  align-items: center;
+  display: flex;
   grid-area: logo;
-  text-align: center;
+  justify-content: center;
+  padding: $xsmall-spacing 0;
+
+  svg {
+    fill: $base-font-color;
+    height: $_header-logo-height;
+    width: $_header-logo-width;
+  }
 }
