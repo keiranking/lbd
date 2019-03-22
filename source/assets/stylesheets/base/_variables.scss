@@ -2,6 +2,11 @@
 $base-font-family: "Graphik", $font-stack-system;
 $heading-font-family: "Canela", $font-stack-system;
 
+// Letter Spacing
+$base-letter-spacing: 0;
+$tight-letter-spacing: -0.02;
+$wide-letter-spacing: 0.2rem;
+
 // Line height
 $base-line-height: 1.5;
 $heading-line-height: 1.2;
@@ -30,6 +35,11 @@ $large-font-size: 2rem;
 $xlarge-font-size: 3rem;
 $xxlarge-font-size: 4rem;
 
+// Font Weights
+$light-font-weight: 300;
+$base-font-weight: normal;
+$heavy-font-weight: bold;
+
 // Colors
 $black: #000000;
 $dark-gray: #222222;
@@ -43,14 +53,16 @@ $red: #dd0000;
 
 // Background Colors
 $viewport-background-color: $dark-gray;
+$viewport-dark-tint: darken($viewport-background-color, 5%);
+$viewport-light-tint: lighten($viewport-background-color, 5%);
 
 // Domain Colors
 $base-font-color: $light-gray;
-$action-color: $red;
+$action-color: lighten($base-font-color, 5%);
 $playing-card-color: $white;
 
 // Border
-$base-border-color: lighten($viewport-background-color, 5%);
+$base-border-color: $viewport-light-tint;
 $base-border: 1px solid $base-border-color;
 $bright-border: 1px solid $base-font-color;
 $testing-border: 2px dashed #9acd32;
