@@ -1,4 +1,5 @@
 $_menu-color: $base-border-color;
+$_nav-font-size: $base-font-size * 0.75;
 $_nav-icon-size: 0.5rem;
 $_submenu-width: 12rem;
 
@@ -14,18 +15,31 @@ $_submenu-width: 12rem;
 }
 
 .nav__item {
+  font-size: $_nav-font-size;
+  font-family: $heading-font-family;
+  letter-spacing: $wide-letter-spacing;
   padding: $small-spacing $base-spacing;
+  text-transform: uppercase;
 
   &[open] {
     background-color: $_menu-color;
   }
 }
 
+.nav__item--cta {
+  border: $bright-border;
+  margin: $xsmall-spacing $small-spacing;
+  padding: $xsmall-spacing $small-spacing;
+}
+
 .nav__submenu {
   background-color: $_menu-color;
+  font-size: $small-font-size;
   left: 0;
+  letter-spacing: $base-letter-spacing;
   padding: $small-spacing $base-spacing;
   position: absolute;
+  text-transform: none;
   top: 100%;
   width: $xxlarge-spacing;
 }

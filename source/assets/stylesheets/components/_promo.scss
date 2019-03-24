@@ -1,4 +1,4 @@
-$_media-size: 12rem;
+$_media-width: 10rem;
 
 .promo {
   align-items: center;
@@ -7,6 +7,14 @@ $_media-size: 12rem;
 
   @media(min-width: $large-screen-breakpoint) {
     flex-direction: row;
+  }
+
+  & + & {
+    margin-top: $large-spacing;
+
+    @media(min-width: $large-screen-breakpoint) {
+      margin-top: 0;
+    }
   }
 }
 
@@ -22,16 +30,16 @@ $_media-size: 12rem;
 
 .promo__media {
   flex: 0 0 auto;
-  height: $_media-size;
-  width: $_media-size;
+  max-width: $_media-width;
 
-  @media(min-width: $mobile-breakpoint) {
-    height: $_media-size * 1.33;
-    width: $_media-size * 1.33;
+  @media(min-width: $desktop-breakpoint) {
+    max-width: $_media-width * 1.25;
   }
 }
 
 .promo__media--left {
+  transform: rotate(-2deg);
+
   @media(min-width: $large-screen-breakpoint) {
     margin-right: $large-spacing;
     order: -5;
@@ -39,6 +47,8 @@ $_media-size: 12rem;
 }
 
 .promo__media--right {
+  transform: rotate(2deg);
+
   @media(min-width: $large-screen-breakpoint) {
     margin-left: $large-spacing;
     order: 5;

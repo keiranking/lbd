@@ -9,12 +9,7 @@
     <nav class="header__left-nav nav">
       <details class="nav__item">
         <summary>
-          How to play
-
-          <%= inline_svg "ui/down-triangle.svg",
-            title: "Menu indicator",
-            class: "nav__icon"
-          %>
+          Rules
         </summary>
 
         <%= partial "partials/games-list", locals: {
@@ -24,8 +19,8 @@
     </nav>
 
     <nav class="header__right-nav nav">
-      <a class="nav__item">
-        Order yours
+      <a class="nav__item nav__item--cta">
+        Buy
       </a>
     </nav>
   </div>

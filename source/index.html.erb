@@ -24,12 +24,12 @@
         </p>
       </div>
 
-      <div class="promo__media promo__media--right">
-        <img class="image--cover" src="<%= lorem.image '400x400' %>" />
-      </div>
+      <picture class="promo__media promo__media--right">
+        <%= image_tag 'brand/intimate.png',
+          class: "image--cover"
+        %>
+      </picture>
     </div>
-
-    <hr />
 
     <div class="promo">
       <div class="promo__body">
@@ -43,12 +43,12 @@
         </p>
       </div>
 
-      <div class="promo__media promo__media--left">
-        <img class="image--cover" src="<%= lorem.image '400x400' %>" />
-      </div>
+      <picture class="promo__media promo__media--left">
+        <%= image_tag 'brand/inclusive.png',
+          class: "image--cover"
+        %>
+      </picture>
     </div>
-
-    <hr />
 
     <div class="promo">
       <div class="promo__body">
@@ -62,9 +62,11 @@
         </p>
       </div>
 
-      <div class="promo__media promo__media--right">
-        <img class="image--cover" src="<%= lorem.image '400x400' %>" />
-      </div>
+      <picture class="promo__media promo__media--right">
+        <%= image_tag 'brand/inexhaustible.png',
+          class: "image--cover"
+        %>
+      </picture>
     </div>
   </div>
 </section>
