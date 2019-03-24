@@ -12,7 +12,7 @@ thead {
   vertical-align: bottom;
 
   tr {
-    border-bottom: $bright-border;
+    border-bottom: 1px solid $medium-gray;
   }
 }
 
@@ -25,10 +25,11 @@ tr {
 }
 
 th {
+  color: $medium-gray;
   font-family: $heading-font-family;
   font-size: $small-font-size;
-  font-weight: bold;
-  letter-spacing: 0.2rem;
+  font-weight: $base-font-weight;
+  letter-spacing: $wide-letter-spacing;
   text-transform: uppercase;
 }
 

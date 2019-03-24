@@ -1,0 +1,24 @@
+.particulars {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: $base-spacing;
+}
+
+.particulars__particular {
+  flex: 1 0 auto;
+  margin-bottom: $small-spacing;
+  margin-right: $base-spacing;
+}
+
+.particulars__label {
+  color: $medium-gray;
+  font-family: $heading-font-family;
+  font-size: $small-font-size;
+  font-weight: $base-font-weight;
+  letter-spacing: $wide-letter-spacing;
+  text-transform: uppercase;
+}
+
+.particulars__data {
+  font-size: $medium-font-size;
+}

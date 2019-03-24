@@ -15,6 +15,42 @@
     <main class="site__main" role="main">
       <section class="section section--padded">
         <article class="section__content--slim article">
+          <h1>
+            <%= current_page.data.title %>
+          </h1>
+
+          <div class="particulars">
+            <dl class="particulars__particular">
+              <dt class="particulars__label">
+                Players
+              </dt>
+
+              <dd class="particulars__data">
+                <%= current_page.data.players %>
+              </dd>
+            </dl>
+
+            <dl class="particulars__particular">
+              <dt class="particulars__label">
+                Game Length
+              </dt>
+
+              <dd class="particulars__data">
+                <%= current_page.data.game_length %>
+              </dd>
+            </dl>
+
+            <dl class="particulars__particular">
+              <dt class="particulars__label">
+                Learning Curve
+              </dt>
+
+              <dd class="particulars__data">
+                <%= current_page.data.learning_curve %>
+              </dd>
+            </dl>
+          </div>
+
           <%= yield %>
         </article>
       </section>
