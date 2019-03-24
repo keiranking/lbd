@@ -1,6 +1,6 @@
-# Project Name
+# LBD
 
-This app is built with [Middleman].
+This repo contains the Middleman app for [Little Black Deck](littleblackdeck.com).
 
 [Middleman]: https://middlemanapp.com/
 
