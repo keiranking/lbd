@@ -1,5 +1,6 @@
 table {
   border-collapse: collapse;
+  font-size: $small-font-size;
   margin: $base-spacing 0;
   table-layout: fixed;
   text-align: left;
@@ -9,6 +10,10 @@ table {
 thead {
   line-height: $heading-line-height;
   vertical-align: bottom;
+
+  tr {
+    border-bottom: $bright-border;
+  }
 }
 
 tbody {
@@ -29,5 +34,5 @@ th {
 
 th,
 td {
-  padding: $small-spacing $small-spacing $small-spacing 0;
+  padding: $xsmall-spacing $small-spacing $xsmall-spacing 0;
 }
