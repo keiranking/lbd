@@ -15,8 +15,8 @@ $_submenu-width: 12rem;
 }
 
 .nav__item {
-  font-size: $_nav-font-size;
   font-family: $heading-font-family;
+  font-size: $_nav-font-size;
   letter-spacing: $wide-letter-spacing;
   padding: $small-spacing $base-spacing;
   text-transform: uppercase;
