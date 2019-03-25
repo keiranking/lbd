@@ -157,7 +157,7 @@ For sets, the tacked card must match the collection rank.
 For runs, the tacked card must append to either end of the suited sequence. Aces may be placed high or low, but are terminal. Jokers may be replaced with the appropriate suited rank, in which case the joker moves to the higher end of the sequence if possible, and the lower end of the sequence if not.
 
 <%= partial "partials/hand", locals: {
-  caption: "A laid run before tacking.",
+  caption: "A laid run before tacking...",
   cards: [
     "4 of diamonds",
     "5 of diamonds",
@@ -167,7 +167,7 @@ For runs, the tacked card must append to either end of the suited sequence. Aces
 } %>
 
 <%= partial "partials/hand", locals: {
-  caption: "The laid run after tacking a new card (in a spot previously held by a joker).",
+  caption: "...and after tacking a new card that replaces and shifts the joker.",
   cards: [
     "4 of diamonds",
     "5 of diamonds",
