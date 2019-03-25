@@ -94,7 +94,41 @@ A player can only lay during her turn. If after drawing a card, she has the corr
 
 After laying, a player can dispose of additional cards in her hand by adding them, or "tacking", to either her own laid combinations or that of other players.
 
-Jokers may not exceed ranked cards in any collection.
+### Laying Jokers
+
+Sets and runs must only include one joker in their minimum configuration. Additional jokers may be tacked, but jokers can never abut each other.
+
+<%= partial "partials/hand", locals: {
+  caption: "A set using a joker.",
+  cards: [
+    "Q of hearts",
+    "joker",
+    "Q of clubs"
+  ]
+} %>
+
+<%= partial "partials/hand", locals: {
+  caption: "A run using a joker.",
+  cards: [
+    "8 of spades",
+    "joker",
+    "10 of spades",
+    "J of spades"
+  ]
+} %>
+
+<%= partial "partials/hand", locals: {
+  caption: "An extended run using multiple jokers.",
+  cards: [
+    "4 of diamonds",
+    "5 of diamonds",
+    "joker",
+    "7 of diamonds",
+    "joker",
+    "9 of diamonds"
+  ]
+} %>
+
 
 ### Coming Down & Out ("Bending the Board")
 
@@ -121,10 +155,6 @@ A tacked card must extend the existing collection.
 For sets, the tacked card must match the collection rank.
 
 For runs, the tacked card must append to either end of the suited sequence. Aces may be placed high or low, but are terminal. Jokers may be replaced with the appropriate suited rank, in which case the joker moves to the higher end of the sequence if possible, and the lower end of the sequence if not.
-
-Examples
-
-There is no limit to the number of jokers that can be tacked to a collection.
 
 ## Scoring
 

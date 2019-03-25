@@ -1,13 +1,17 @@
 <div class="playing-card playing-card--<%= suit %>">
   <div class="playing-card__face">
-    <%= inline_svg "ranks/#{rank}.svg",
-      title: "#{rank}",
-      class: "mini-hand__rank"
-    %>
+    <% if rank %>
+      <%= inline_svg "ranks/#{rank}.svg",
+        title: "#{rank}",
+        class: "mini-hand__rank"
+      %>
+    <% end %>
 
-    <%= inline_svg "suits/#{suit}.svg",
-      title: "#{suit}",
-      class: "mini-hand__suit"
-    %>
+    <% if suit %>
+      <%= inline_svg "suits/#{suit}.svg",
+        title: "#{suit}",
+        class: "mini-hand__suit"
+      %>
+    <% end %>
   </div>
 </div>

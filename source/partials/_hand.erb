@@ -1,7 +1,7 @@
 <figure class="hand">
   <div class="hand__cards">
     <% cards.each do |card| %>
-      <% rank, suit = card.split(' of ') %>
+      <% rank, suit = rank_and_suit(card) %>
 
       <%= partial "partials/playing-card", locals: { rank: rank, suit: suit } %>
     <% end %>

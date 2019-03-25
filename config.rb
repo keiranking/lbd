@@ -36,4 +36,8 @@ helpers do
   def game_resources
     sitemap.resources.select { |resource| resource.path.start_with?("games") }
   end
+
+  def rank_and_suit(card)
+    rank, suit = card.split(' of ')
+  end
 end
