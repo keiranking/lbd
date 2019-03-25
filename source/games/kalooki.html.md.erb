@@ -20,7 +20,7 @@ Each game has 9 rounds. Each round requires players to collect a unique combinat
   cards: [
     "4 of diamonds",
     "4 of hearts",
-    "4 of clubs"
+    "4 of clubs",
   ]
 } %>
 
@@ -30,7 +30,7 @@ Each game has 9 rounds. Each round requires players to collect a unique combinat
     "8 of spades",
     "9 of spades",
     "10 of spades",
-    "J of spades"
+    "J of spades",
   ]
 } %>
 
@@ -103,7 +103,7 @@ Sets and runs must only include one joker in their minimum configuration. Additi
   cards: [
     "Q of hearts",
     "joker",
-    "Q of clubs"
+    "Q of clubs",
   ]
 } %>
 
@@ -113,7 +113,7 @@ Sets and runs must only include one joker in their minimum configuration. Additi
     "8 of spades",
     "joker",
     "10 of spades",
-    "J of spades"
+    "J of spades",
   ]
 } %>
 
@@ -125,7 +125,7 @@ Sets and runs must only include one joker in their minimum configuration. Additi
     "joker",
     "7 of diamonds",
     "joker",
-    "9 of diamonds"
+    "9 of diamonds",
   ]
 } %>
 
@@ -156,6 +156,28 @@ For sets, the tacked card must match the collection rank.
 
 For runs, the tacked card must append to either end of the suited sequence. Aces may be placed high or low, but are terminal. Jokers may be replaced with the appropriate suited rank, in which case the joker moves to the higher end of the sequence if possible, and the lower end of the sequence if not.
 
+<%= partial "partials/hand", locals: {
+  caption: "A laid run before tacking.",
+  cards: [
+    "4 of diamonds",
+    "5 of diamonds",
+    "joker",
+    "7 of diamonds",
+  ]
+} %>
+
+<%= partial "partials/hand", locals: {
+  caption: "The laid run after tacking a new card (in a spot previously held by a joker).",
+  cards: [
+    "4 of diamonds",
+    "5 of diamonds",
+    "6 of diamonds!",
+    "7 of diamonds",
+    "joker",
+  ]
+} %>
+
+
 ## Scoring
 
 A player's score is the sum of the value of the cards remaining in hand when any player has won the round.
@@ -173,7 +195,7 @@ For players who have not laid, it is the sum of all cards in hand.
 | Card        | Value       |
 | ----------- | ----------- |
 | Red ace     | 1           |
-| 2-10        | Face value  |
+| 2-10        | 2-10        |
 | J,Q,K       | 10          |
 | Black ace   | 15          |
 | Joker       | 50          |
