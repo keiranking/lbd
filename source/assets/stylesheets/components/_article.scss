@@ -1,3 +1,5 @@
+$_list-indent: $small-spacing * 1.5;
+
 .article {
   h1 {
     border-bottom: 4px solid rgba($base-font-color, 0.1);
@@ -19,13 +21,46 @@
   }
 
   ol {
-    list-style-type: decimal;
-    margin-left: $base-spacing;
+    counter-reset: article-list-counter;
+
+    > li {
+      counter-increment: article-list-counter;
+      margin-left: $_list-indent;
+      position: relative;
+
+      @media(min-width: $mobile-breakpoint) {
+        margin-left: 0;
+      }
+
+      &::before {
+        color: $dimmed-font-color;
+        content: counter(article-list-counter);
+        font-family: $heading-font-family;
+        font-weight: $heavy-font-weight;
+        left: -$_list-indent;
+        position: absolute;
+        text-align: center;
+        top: 0.075rem;
+      }
+    }
   }
 
   ul {
-    list-style-type: disc;
-    margin-left: $base-spacing;
+    margin-left: $_list-indent;
+    margin-top: -$xsmall-spacing;
     padding-bottom: $small-spacing;
+
+    > li {
+      position: relative;
+
+      &::before {
+        color: $dimmed-font-color;
+        content: "\2666";
+        font-size: $small-font-size;
+        left: -$_list-indent;
+        position: absolute;
+        top: 0.25rem;
+      }
+    }
   }
 }
