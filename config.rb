@@ -40,4 +40,15 @@ helpers do
   def rank_and_suit(card)
     rank, suit = card.split(' of ')
   end
+
+  def special_features(card)
+    features = []
+
+    if card.slice(-1,1) == "!"
+      features.push("highlight")
+      card = card.chop
+    end
+
+    return card, features
+  end
 end

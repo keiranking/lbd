@@ -10,6 +10,12 @@ $_playing-card-width: $_pip-size * 5.5;
   }
 }
 
+.playing-card--highlight {
+  .playing-card__face {
+    height: $_playing-card-height + $small-spacing;
+  }
+}
+
 .playing-card__face {
   align-items: flex-start;
   background-color: $playing-card-color;

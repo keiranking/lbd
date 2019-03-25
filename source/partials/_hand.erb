@@ -1,9 +1,12 @@
 <figure class="hand">
   <div class="hand__cards">
     <% cards.each do |card| %>
+      <% card, special_features = special_features(card) %>
       <% rank, suit = rank_and_suit(card) %>
 
-      <%= partial "partials/playing-card", locals: { rank: rank, suit: suit } %>
+      <%= partial "partials/playing-card",
+        locals: { rank: rank, suit: suit, special_features: special_features }
+      %>
     <% end %>
   </div>
 
