@@ -1,0 +1,30 @@
+.signup {
+  @media(min-width: $desktop-breakpoint) {
+    align-items: center;
+    display: flex;
+  }
+
+  input {
+    border: $invisible-border;
+    height: $large-spacing;
+  }
+}
+
+.signup__email {
+  border-radius: $base-border-radius;
+  margin-bottom: $small-spacing;
+
+  @media(min-width: $desktop-breakpoint) {
+    border-radius: $base-border-radius 0 0 $base-border-radius;
+    margin: 0;
+  }
+}
+
+.signup__submit {
+  border-radius: $base-border-radius;
+
+  @media(min-width: $desktop-breakpoint) {
+    border-radius: 0 $base-border-radius $base-border-radius 0;
+    margin: 0;
+  }
+}
