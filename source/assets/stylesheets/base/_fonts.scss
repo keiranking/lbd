@@ -82,3 +82,17 @@
   src: url("../../assets/fonts/fineday.woff") format("woff"),
     url("../../assets/fonts/fineday.ttf") format("ttf");
 }
+
+@font-face {
+  font-family: "Franklin";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../assets/fonts/franklin-light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Franklin";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../../assets/fonts/franklin-bold.woff") format("woff");
+}
