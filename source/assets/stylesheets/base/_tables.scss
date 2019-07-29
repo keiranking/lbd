@@ -1,8 +1,9 @@
 table {
   border-collapse: collapse;
+  color: $dimmed-font-color;
   font-size: $small-font-size;
   margin: $base-spacing 0;
-  table-layout: fixed;
+  table-layout: auto;
   text-align: left;
   width: 100%;
 }
@@ -12,12 +13,16 @@ thead {
   vertical-align: bottom;
 
   tr {
-    border-bottom: 1px solid $dimmed-font-color;
+    border-bottom: $base-border-double;
   }
 }
 
 tbody {
   vertical-align: top;
+
+  tr:last-of-type {
+    border-bottom: $base-border-double;
+  }
 }
 
 tr {

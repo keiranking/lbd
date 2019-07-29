@@ -2,20 +2,20 @@ $_list-indent: $base-spacing;
 
 .article {
   h1 {
-    border-bottom: 0.25rem solid $viewport-light-tint;
+    border-bottom: $base-border-quadruple;
     margin-bottom: $base-spacing;
     margin-top: 0;
     padding-bottom: $small-spacing;
   }
 
   h2 {
-    border-bottom: 0.125rem solid $viewport-light-tint;
+    border-bottom: $base-border-double;
     margin-top: $xlarge-spacing;
     padding-bottom: $small-spacing;
   }
 
   h3 {
-    border-bottom: 0.125rem solid $viewport-light-tint;
+    border-bottom: $base-border-double;
     margin-top: $large-spacing;
     padding-bottom: $small-spacing;
   }
