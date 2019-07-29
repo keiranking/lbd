@@ -64,9 +64,10 @@ $playing-card-color: $white;
 
 // Border
 $base-border-color: $viewport-light-tint;
-$base-border: 0.0625rem solid $base-border-color;
-$base-border-double: 0.125rem solid $base-border-color;
-$base-border-quadruple: 0.25rem solid $base-border-color;
+$base-border-width: 0.0625rem;
+$base-border: $base-border-width solid $base-border-color;
+$base-border-double: ($base-border-width * 2) solid $base-border-color;
+$base-border-quadruple: ($base-border-width * 4) solid $base-border-color;
 $bright-border: 1px solid $base-font-color;
 $background-border: 1px solid $viewport-background-color;
 

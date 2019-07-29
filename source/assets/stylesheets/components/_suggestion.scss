@@ -5,24 +5,23 @@ $_suggestion-card-width: 2.25 * $base-spacing;
   align-items: center;
   display: flex;
   font-size: $small-font-size;
-  font-weight: $heavy-font-weight;
   margin: $base-spacing 0;
 
   &::before {
     align-items: flex-end;
-    background-color: $white;
+    background-color: $black;
     border-radius: $base-border-radius;
-    color: $viewport-background-color;
+    color: $white;
     content: "Little \A Black \A Idea";
     display: flex;
-    font-size: $small-font-size;
+    font-family: $heading-font-family;
     font-weight: $heavy-font-weight;
     height: $_suggestion-card-height;
     line-height: 1;
     margin-right: $small-spacing;
+    min-width: $_suggestion-card-width;
     padding: $xsmall-spacing;
     transform: rotate(-1deg);
     white-space: pre;
-    width: $_suggestion-card-width;
   }
 }

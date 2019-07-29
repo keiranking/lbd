@@ -19,7 +19,7 @@ $_playing-card-width: $_pip-size * 5.5;
 .playing-card__face {
   align-items: flex-start;
   background-color: $playing-card-color;
-  border: 0.1rem solid $viewport-background-color;
+  border: ($base-border-width * 2) solid $viewport-background-color;
   border-radius: $large-border-radius $large-border-radius 0 0;
   display: flex;
   flex-direction: column;
